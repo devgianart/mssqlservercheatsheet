@@ -1,0 +1,14 @@
+/* Cheat Sheet SQL SERVER Commands */
+------------------------------------------------------
+|                 How to create database?            |
+------------------------------------------------------
+CREATE DATABASE nameofdatabase;
+
+------------------------------------------------------
+|   How to create table with PK Auto increment id?   |
+------------------------------------------------------
+CREATE TABLE table_name (
+    column1 datatype INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+    column2 datatype,
+    column3 datatype
+);
