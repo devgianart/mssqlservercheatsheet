@@ -1,0 +1,2 @@
+# sqlservercheatsheet
+sql server commands
