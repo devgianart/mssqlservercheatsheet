@@ -31,4 +31,4 @@ ALTER tbl_name ADD column_name data_type;
 ----------------------------------------------------
 | How to view all data from a table?               |
 ----------------------------------------------------
-SELECT * FROM tbl_name
+SELECT * FROM tbl_name;
