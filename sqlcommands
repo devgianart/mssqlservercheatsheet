@@ -14,9 +14,38 @@ CREATE TABLE table_name (
 );
 
 ----------------------------------------------------
+| How to view all data from a table?               |
+----------------------------------------------------
+SELECT * FROM tbl_name;
+
+----------------------------------------------------
 | How to insert values into table?                 |
 ----------------------------------------------------
 INSERT INTO table_name (column_value1, column_value2, column_value3) VALUES (value1, value2, value3);
+
+----------------------------------------------------
+| How to group by table?                           |
+----------------------------------------------------
+SELECT column_name(s) FROM table_name
+WHERE condition GROUP BY column_name ORDER BY column_name;
+
+----------------------------------------------------
+| How to GROUP BY table with COUNT?                |
+----------------------------------------------------
+SELECT COUNT(column_name) FROM table_name
+GROUP BY column_name
+
+----------------------------------------------------
+| How to GROUP BY table with COUNT and ORDER BY?   |
+----------------------------------------------------
+SELECT COUNT(CustomerID) AS Total, Country
+FROM Customers
+GROUP BY Country ORDER BY Country DESC
+
+----------------------------------------------------
+| How to get latest column id on table?            |
+----------------------------------------------------
+SELECT MAX(column_name) FROM table_name;
 
 ----------------------------------------------------
 | How to drop table?                               |
@@ -28,7 +57,3 @@ DROP TABLE table_name;
 ----------------------------------------------------
 ALTER tbl_name ADD column_name data_type;
 
-----------------------------------------------------
-| How to view all data from a table?               |
-----------------------------------------------------
-SELECT * FROM tbl_name;
