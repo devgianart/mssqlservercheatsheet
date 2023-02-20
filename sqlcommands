@@ -33,14 +33,14 @@ WHERE condition GROUP BY column_name ORDER BY column_name;
 | How to GROUP BY table with COUNT?                |
 ----------------------------------------------------
 SELECT COUNT(column_name) FROM table_name
-GROUP BY column_name
+GROUP BY column_name;
 
 ----------------------------------------------------
 | How to GROUP BY table with COUNT and ORDER BY?   |
 ----------------------------------------------------
 SELECT COUNT(CustomerID) AS Total, Country
 FROM Customers
-GROUP BY Country ORDER BY Country DESC
+GROUP BY Country ORDER BY Country DESC;
 
 ----------------------------------------------------
 | How to get latest column id on table?            |
