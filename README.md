@@ -1,2 +1,2 @@
-# sqlservercheatsheet
-sql server commands reviewer
+# mssqlservercheatsheet
+mssql server commands
