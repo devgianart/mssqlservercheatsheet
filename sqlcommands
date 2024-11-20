@@ -8,7 +8,7 @@ CREATE DATABASE nameofdatabase;
 | How to create table with PK Auto increment id?   |
 ----------------------------------------------------
 CREATE TABLE table_name (
-    column1 datatype INT NOT NULL IDENTITY(1,1) NOT NULL,
+    column1 datatype INT IDENTITY(1,1) NOT NULL,
     column2 datatype,
     column3 datatype
 ) ON [PRIMARY];
@@ -57,3 +57,8 @@ DROP TABLE table_name;
 ----------------------------------------------------
 ALTER tbl_name ADD column_name data_type;
 
+
+-----------------------------------------------------
+| How to format column from YYYY-MM-dd to YYYYMMDD   |
+-----------------------------------------------------
+YEAR(C.StartDate) * 1000 + MONTH (C.StartDate) * 100 + DAY(C.StartDate)
